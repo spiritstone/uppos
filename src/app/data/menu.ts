@@ -1,0 +1,88 @@
+// /data/menu.ts
+export const COFFEE = [
+  { name: "에스프레소", price: 5000, type: "hot" },
+  { name: "카푸치노", price: 5500, type: "hot" },
+
+  { name: "아메리카노", price: 5000, type: "hot" },
+  { name: "아메리카노", price: 5000, type: "ice" },
+  { name: "라떼", price: 5500, type: "hot" },
+  { name: "라떼", price: 5500, type: "ice" },
+  { name: "플랫화이트", price: 5500, type: "hot" },
+  { name: "플랫화이트", price: 5500, type: "ice" },
+  { name: "바닐라라떼", price: 6000, type: "hot" },
+  { name: "바닐라라떼", price: 6000, type: "ice" },
+  { name: "헤이즐넛라떼", price: 6000, type: "hot" },
+  { name: "헤이즐넛라떼", price: 6000, type: "ice" },
+  { name: "메이플라떼", price: 6000, type: "hot" },
+  { name: "메이플라떼", price: 6000, type: "ice" },
+  { name: "돌체라떼", price: 6500, type: "hot" },
+  { name: "돌체라떼", price: 6500, type: "ice" },
+  { name: "카라멜 마끼아또", price: 6500, type: "hot" },
+  { name: "카라멜 마끼아또", price: 6500, type: "ice" },
+  { name: "카페 모카", price: 6500, type: "hot" },
+  { name: "카페 모카", price: 6500, type: "ice" },
+  { name: "아인슈페너", price: 7000, type: "ice" },
+  { name: "그린플로우", price: 7000, type: "ice" },
+];
+
+export const NONCOFFEE = [
+  { name: "레몬차", price: 6000, type: "hot" },
+  { name: "레몬차", price: 6000, type: "ice" },
+  { name: "자몽차", price: 6000, type: "hot" },
+  { name: "자몽차", price: 6000, type: "ice" },
+  { name: "레몬에이드", price: 6500, type: "ice" },
+  { name: "자몽에이드", price: 6500, type: "ice" },
+  { name: "파인애플에이드", price: 6500, type: "ice" },
+  { name: "키위에이드", price: 6500, type: "ice" },
+  { name: "생자몽쥬스", price: 7500, type: "ice" },
+  { name: "오렌지쥬스", price: 7500, type: "ice" },
+  { name: "ABC쥬스", price: 7500, type: "ice" },
+  { name: "스트로베리라떼", price: 7000, type: "ice" },
+  { name: "초코라떼", price: 7000, type: "ice" },
+  { name: "초코라떼", price: 7000, type: "hot" },
+  { name: "말차라떼", price: 7000, type: "ice" },
+  { name: "말차라떼", price: 7000, type: "hot" },
+];
+
+export const TEA = [
+  // TEA
+  { name: "레몬그라스", price: 6000, type: "hot" },
+  { name: "레몬그라스", price: 6000, type: "ice" },
+  { name: "페퍼민트", price: 6000, type: "hot" },
+  { name: "페퍼민트", price: 6000, type: "ice" },
+  { name: "루이보스", price: 6000, type: "hot" },
+  { name: "루이보스", price: 6000, type: "ice" },
+  { name: "레몬진저", price: 6000, type: "hot" },
+  { name: "레몬진저", price: 6000, type: "ice" },
+  { name: "로즈마리", price: 6000, type: "hot" },
+  { name: "로즈마리", price: 6000, type: "ice" },
+  { name: "레몬밤", price: 6000, type: "hot" },
+  { name: "레몬밤", price: 6000, type: "ice" },
+  { name: "히비스커스", price: 6000, type: "hot" },
+  { name: "히비스커스", price: 6000, type: "ice" },
+  { name: "얼그레이", price: 6000, type: "hot" },
+  { name: "얼그레이", price: 6000, type: "ice" },
+  { name: "라벤더", price: 6000, type: "hot" },
+  { name: "라벤더", price: 6000, type: "ice" },
+  { name: "자스민", price: 6000, type: "hot" },
+  { name: "자스민", price: 6000, type: "ice" },
+  { name: "캐모마일", price: 6000, type: "hot" },
+  { name: "캐모마일", price: 6000, type: "ice" },
+  { name: "잉글리쉬브렉퍼스트", price: 6000, type: "hot" },
+  { name: "잉글리쉬브렉퍼스트", price: 6000, type: "ice" },
+];
+export const FOODS = [
+  { name: "스페셜 카프레제 샐러드", price: 15800, type: "salad" },
+  { name: "제주 탠저린 샐러드", price: 15800, type: "salad" },
+  { name: "크림파스타", price: 16800, type: "pasta" },
+  { name: "토마토파스타", price: 16800, type: "pasta" },
+  { name: "깻잎파스타", price: 17600, type: "pasta" },
+  { name: "치킨 샌드위치", price: 15800, type: "sandwich" },
+  { name: "부라타 샌드위치", price: 15800, type: "sandwich" },
+];
+
+export const DESSERT = [
+  { name: "홈메이드 티라미수", price: 8500 },
+  { name: "말차 티라미수", price: 8500 },
+  { name: "딸기 케이크", price: 8500 },
+];

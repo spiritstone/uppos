@@ -2,14 +2,13 @@
 import { useState } from "react";
 import Image from "next/image";
 import { Button } from "@heroui/button";
-import { Card, CardBody } from "@heroui/card";
-import {
-  Modal,
-  ModalContent,
-  ModalHeader,
-  ModalBody,
-  ModalFooter,
-} from "@heroui/modal";
+// import {
+//   Modal,
+//   ModalContent,
+//   ModalHeader,
+//   ModalBody,
+//   ModalFooter,
+// } from "@heroui/modal";
 import { COFFEE, NONCOFFEE, TEA, FOODS, DESSERT } from "./data/menu";
 
 export default function CafePOSPage() {
@@ -19,20 +18,20 @@ export default function CafePOSPage() {
       { name: string; price: number; type?: string; quantity: number }
     >
   >({});
-  const [paymentType, setPaymentType] = useState("");
-  const [showModal, setShowModal] = useState(false);
-  const [history, setHistory] = useState<
-    {
-      orders: {
-        name: string;
-        price: number;
-        type?: string;
-        quantity: number;
-      }[];
-      paymentType: string;
-      total: number;
-    }[]
-  >([]);
+  // const [paymentType, setPaymentType] = useState("");
+  // const [showModal, setShowModal] = useState(false);
+  // const [history, setHistory] = useState<
+  //   {
+  //     orders: {
+  //       name: string;
+  //       price: number;
+  //       type?: string;
+  //       quantity: number;
+  //     }[];
+  //     paymentType: string;
+  //     total: number;
+  //   }[]
+  // >([]);
 
   const addItem = (item: { name: string; price: number; type?: string }) => {
     const key = `${item.name}_${item.type ?? ""}`;
@@ -48,6 +47,7 @@ export default function CafePOSPage() {
     setOrders((prev) => {
       if (!prev[key]) return prev;
       if (prev[key].quantity <= 1) {
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         const { [key]: _, ...rest } = prev;
         return rest;
       }
@@ -57,21 +57,20 @@ export default function CafePOSPage() {
       };
     });
   };
-
   const total = Object.values(orders).reduce(
     (sum, item) => sum + item.price * item.quantity,
     0
   );
 
-  const confirmOrder = () => {
-    setHistory([
-      ...history,
-      { orders: Object.values(orders), paymentType, total },
-    ]);
-    setOrders({});
-    setPaymentType("");
-    setShowModal(false);
-  };
+  // const confirmOrder = () => {
+  //   setHistory([
+  //     ...history,
+  //     { orders: Object.values(orders), paymentType, total },
+  //   ]);
+  //   setOrders({});
+  //   setPaymentType("");
+  //   setShowModal(false);
+  // };
 
   const renderMenuSection = (
     id: string,
@@ -86,7 +85,13 @@ export default function CafePOSPage() {
             key={idx}
             onPress={() => addItem(item)}
             radius="lg"
-            className={`cursor-pointer text-black ${item.type === "ice" ? "bg-blue-200" : item.type === "hot" ? "bg-red-200" : "bg-green-300"}`}
+            className={`cursor-pointer text-black ${
+              item.type === "ice"
+                ? "bg-blue-200"
+                : item.type === "hot"
+                ? "bg-red-200"
+                : "bg-green-300"
+            }`}
           >
             <div className="p-4 flex flex-col items-center gap-2 rounded">
               <div className="font-semibold">{item.name}</div>
@@ -169,7 +174,9 @@ export default function CafePOSPage() {
               </Button>
               {item.type === "ice" || item.type === "hot" ? (
                 <div
-                  className={`text-xs px-2 py-1 rounded text-white ${item.type === "ice" ? "bg-blue-500" : "bg-red-500"}`}
+                  className={`text-xs px-2 py-1 rounded text-white ${
+                    item.type === "ice" ? "bg-blue-500" : "bg-red-500"
+                  }`}
                 >
                   {item.type.toUpperCase()}
                 </div>

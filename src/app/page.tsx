@@ -152,7 +152,7 @@ export default function CafePOSPage() {
       </section>
       <div className="fixed bottom-0 left-0 right-0 bg-black p-4 pb-8 shadow-lg">
         <div>
-          <div className="flex justify-between flex-row">
+          <div className="flex justify-between flex-row text-white">
             <div className="text-lg font-bold items-center flex">주문 내역</div>
             <div className="text-right">
               <Button
@@ -168,7 +168,7 @@ export default function CafePOSPage() {
               <Button
                 radius="full"
                 onPress={() => removeItem(key)}
-                className=" bg-yellow-400 p-2 px-3 font-bold text-black"
+                className=" bg-yellow-400 py-1 px-3 font-bold text-black rounded-full"
               >
                 -
               </Button>
@@ -181,13 +181,15 @@ export default function CafePOSPage() {
                   {item.type.toUpperCase()}
                 </div>
               ) : null}
-              <div className="flex-1">
+              <div className="flex-1 text-white">
                 {item.name} (x{item.quantity})
               </div>
-              <div>{(item.price * item.quantity).toLocaleString()}원</div>
+              <div className="text-white">
+                {(item.price * item.quantity).toLocaleString()}원
+              </div>
             </div>
           ))}
-          <div className="text-right font-bold mt-2">
+          <div className="text-right font-bold mt-2 text-white text-xl">
             합계: {total.toLocaleString()}원
           </div>
         </div>

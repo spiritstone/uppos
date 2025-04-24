@@ -85,4 +85,7 @@ export const DESSERT = [
   { name: "홈메이드 티라미수", price: 8500 },
   { name: "말차 티라미수", price: 8500 },
   { name: "딸기 케이크", price: 8500 },
+  { name: "파운드 케이크", price: 4500 },
+  { name: "파운드 케이크(take-out)", price: 3500 },
+  
 ];

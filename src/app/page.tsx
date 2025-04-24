@@ -9,7 +9,7 @@ import { Button } from "@heroui/button";
 //   ModalBody,
 //   ModalFooter,
 // } from "@heroui/modal";
-import { COFFEE, NONCOFFEE, TEA, FOODS, DESSERT } from "./data/menu";
+import { COFFEE, NONCOFFEE, TEA, FOODS, DESSERT, WINE } from "./data/menu";
 
 export default function CafePOSPage() {
   const [orders, setOrders] = useState<
@@ -133,6 +133,9 @@ export default function CafePOSPage() {
           <a href="#dessert">
             <Button variant="light">🍰 디저트</Button>
           </a>
+          <a href="#wine">
+            <Button variant="light">🍷 와인</Button>
+          </a>
         </div>
       </div>
       <section id="coffee" className="scroll-mt-24">
@@ -149,6 +152,9 @@ export default function CafePOSPage() {
       </section>
       <section id="dessert" className="scroll-mt-24">
         {renderMenuSection("dessert", "🍰 디저트", DESSERT)}
+      </section>
+      <section id="wine" className="scroll-mt-24">
+        {renderMenuSection("wine", "🍷 와인", WINE)}
       </section>
       <div className="fixed bottom-0 left-0 right-0 bg-black p-4 pb-8 shadow-lg">
         <div>

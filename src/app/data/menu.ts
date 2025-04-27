@@ -105,10 +105,10 @@ export const WINE = [
   { name: "콜리 노빌, 모스카토 스푸만테", price: 53700 },
   { name: "아바찌아 모스카토 다스티", price: 47800 },
   { name: "쿠나 델 솔 소비뇽 블랑", price: 34700 },
-  { name: "B-기네스 드레프트", price: 10500 },
-  { name: "B-코로나", price: 8300 },
-  { name: "B-하이네켄", price: 8900 },
-  { name: "B-호가든", price: 7800 },
-  { name: "B-버드와이저", price: 7000 },
+  { name: "B-기네스 드레프트", price: 11000 },
+  { name: "B-코로나", price: 8800 },
+  { name: "B-하이네켄", price: 9300 },
+  { name: "B-호가든", price: 8300 },
+  { name: "B-버드와이저", price: 7500 },
 ];
 
